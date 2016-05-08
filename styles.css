@@ -1,0 +1,26 @@
+/* Styles for pun_spoiler_bbcode extension */
+div.nsfw-container{
+	border: 1px dotted red;
+	padding: 4px;
+	color: #333333;
+}
+
+span.nsfw-button{
+	background-color: #4a566e;
+	border-left: 1px solid #79859d;
+	border-top: 1px solid #79859d;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	color: white;
+	padding: 2px;
+	font-size: 0.8em;
+	cursor: pointer;
+}
+
+div.nsfw-hidebox{
+	margin-top: 4px;
+	border-top: 1px dotted red;
+	font: 90%;
+	color: #333333;
+	display: none;
+}
