@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <extension engine="1.0">
-	<id>mod_nsfw_bbcode</id>
+	<id>mod_bbcode_nsfw</id>
 	<title>NFSW BBcode</title>
 	<version>1.0.0</version>
 	<description>Adds nsfw BBCode to punBB.</description>
@@ -12,9 +12,9 @@
 	</install>
 	<hooks>
 		<hook id="hd_head"><![CDATA[
-if ((FORUM_PAGE == 'viewtopic') || in_array(FORUM_PAGE, array('post', 'postedit')))
+if (in_array(FORUM_PAGE, array('viewtopic', 'post', 'postedit')))
 {
-    $forum_head['style_pun_extended_bbcode'] = '<link rel="stylesheet" type="text/css" media="screen" href="'.$ext_info['url'].'/styles.css" />';
+    $forum_head['nsfw_css'] = '<link rel="stylesheet" type="text/css" media="screen" href="'.$ext_info['url'].'/styles.css" />';
 }
 		]]></hook>
 
